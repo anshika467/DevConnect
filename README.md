@@ -21,7 +21,7 @@
 ### Security & Compliance
 
 - **Industry-standard auth:** Passwords hashed with **bcrypt**; authentication and authorization enforced with **JWT** tokens.
-- **Cookie security & CORS:** `httpOnly` cookies, `sameSite:lax`, and CORS configured to allow secure frontend-backend communication.
+- **Cookie security & CORS:** `httpOnly` cookies and CORS configured to allow secure frontend-backend communication.
 
 ### UX & Performance
 
@@ -35,7 +35,7 @@
 
 ---
 
-## 🧰 Tech Stack (improved & explained)
+## 🧰 Tech Stack
 
 This project combines pragmatic frontend tooling with a secure, scalable backend. Below is a concise description of each tech and why it was chosen.
 
@@ -49,7 +49,7 @@ This project combines pragmatic frontend tooling with a secure, scalable backend
 
 > The frontend code is available in the `frontend/` folder of this repo. (README focuses on usage & API; implementation files live in the repository.)
 
-### Backend (Server) — purpose-driven stack
+### Backend (Server)
 
 - **Node.js + Express** — Lightweight, performant server for REST APIs and middleware pipelines (auth, CORS, cookie parsing).
 - **MongoDB + Mongoose** — Flexible document DB that maps naturally to user profiles, connections, and request relationships.
@@ -71,7 +71,7 @@ This project combines pragmatic frontend tooling with a secure, scalable backend
 
 ---
 
-## 🔒 Security & Best Practices (quick notes)
+## 🔒 Security & Best Practices
 
 - Store JWT in `httpOnly` cookies to reduce XSS risk; set `sameSite` and secure flags in production.
 - Always hash passwords (bcrypt) and enforce minimal password complexity on the client side.
@@ -93,7 +93,7 @@ Thank you — your contributions make this project better for everyone.
 
 ---
 
-## ⚙️ Environment Variables (.env.example)
+## ⚙️ Environment Variables
 
 ```bash
 PORT=5000
@@ -106,7 +106,7 @@ FRONTEND_URL=http://localhost:3000
 
 ---
 
-## ✅ How to Run (summary)
+## ✅ How to Run
 
 1. Start the backend (see `backend/` folder):
 
